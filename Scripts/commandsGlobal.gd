@@ -96,7 +96,7 @@ func clearObj(category: String = "object"):
 
 	for child in get_tree().current_scene.get_children():
 		if not exclude.has(child.name):
-			if category == child.get_meta("Category") or category == child.get_meta("itemName"):
+			if category == str(child.get_meta("Category")) or category == str(child.get_meta("itemName")): ## this one is fucking me rn
 				print(child)
 				if gbData.data["saw"].has(child.get_meta("itemName")): # check if deleting a pet
 					gbData.removePet(child.get_meta("itemName"))

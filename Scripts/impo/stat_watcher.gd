@@ -1,5 +1,5 @@
 extends Node
-
+#i was on a self scheduled break  and im scared to touch this 
 @export var window: Control
 @export var stat = {
 	"mood": 0.0,
